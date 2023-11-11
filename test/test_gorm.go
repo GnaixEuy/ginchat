@@ -19,19 +19,7 @@ func main() {
 	}
 
 	// Create
-	user := &models.UserBasic{
-		Name:          "GanixEuy",
-		Email:         "test@gnaixeuy.cn",
-		LogOutTime:    0,
-		IsLogOut:      false,
-		Password:      "test",
-		ClientPort:    "test",
-		LoginTime:     0,
-		ClientId:      "test",
-		DeviceInfo:    "test",
-		HeartbeatTime: 0,
-		Phone:         "test",
-	}
+	user := &models.UserBasic{Name: "GnaixEuy"}
 	db.Create(user)
 	fmt.Println(db.First(user, 1))
 }
